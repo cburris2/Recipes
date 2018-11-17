@@ -15,6 +15,8 @@ public class Recipe {
 
 	String category;
 
+	String cook_time;
+
 	String description;
 
 	List<Ingredient> ingredients;
@@ -25,6 +27,8 @@ public class Recipe {
 	int rating;
 
 	String title;
+	String prep_time;
+
 
 	/**
 	 * @return the author
@@ -52,6 +56,20 @@ public class Recipe {
 	 */
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	/**
+	 * @return the cook_time
+	 */
+	public String getCook_time() {
+		return cook_time;
+	}
+
+	/**
+	 * @param cook_time the cook_time to set
+	 */
+	public void setCook_time(String cook_time) {
+		this.cook_time = cook_time;
 	}
 
 	/**
@@ -111,6 +129,20 @@ public class Recipe {
 	}
 
 	/**
+	 * @return the prep_time
+	 */
+	public String getPrep_time() {
+		return prep_time;
+	}
+
+	/**
+	 * @param prep_time the prep_time to set
+	 */
+	public void setPrep_time(String prep_time) {
+		this.prep_time = prep_time;
+	}
+
+	/**
 	 * @return the rating
 	 */
 	public int getRating() {
@@ -143,9 +175,9 @@ public class Recipe {
 	 */
 	@Override
 	public String toString() {
-		return "Recipe [author=" + author + ", category=" + category + ", description=" + description + ", ingredients="
-				+ ingredients + ", instructions=" + instructions + ", level=" + level + ", rating=" + rating
-				+ ", title=" + title + "]";
+		return "Recipe [author=" + author + ", category=" + category + ", cook_time=" + cook_time + ", description="
+				+ description + ", ingredients=" + ingredients + ", instructions=" + instructions + ", level=" + level
+				+ ", rating=" + rating + ", title=" + title + ", prep_time=" + prep_time + "]";
 	}
 
 }
