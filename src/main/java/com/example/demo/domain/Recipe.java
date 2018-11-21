@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.example.domain;
+package com.example.demo.domain;
 
 import java.util.List;
 
