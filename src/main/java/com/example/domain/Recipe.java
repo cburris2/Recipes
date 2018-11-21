@@ -27,6 +27,7 @@ public class Recipe {
 	int rating;
 
 	String title;
+
 	String prep_time;
 
 
