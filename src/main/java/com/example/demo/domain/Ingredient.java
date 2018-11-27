@@ -1,10 +1,19 @@
 package com.example.demo.domain;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class Ingredient {
 
 	String amount;
 	String descriptiveText; // chopped, diced, hot, cold etc
 	String item;
+
+	public Ingredient(String amount, String descriptiveText, String item) {
+		this.amount = amount;
+		this.descriptiveText = descriptiveText;
+		this.item = item;
+	}
 
 	/**
 	 * @return the amount
